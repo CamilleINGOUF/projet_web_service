@@ -8,9 +8,9 @@
 </head>
 <body>
 	<%-- Affichage de la chaîne "message" transmise par la servlet --%>
-	<p class="info">${ message }</p>
+	<p class="info">${form.resultat}</p>
 	<%-- Puis affichage des données enregistrées dans le bean "client" transmis par la servlet --%>
-	<p>Nom : ${ client.name }</p>
-	<p>Email : ${ client.email }</p>
+	<p>Nom : ${ sessionScope.sessionClient.name}</p>
+	<p>Email : ${ sessionScope.sessionClient.email }</p>
 </body>
 </html>
